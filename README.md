@@ -25,8 +25,8 @@ JavaScript Style Guide and Linting
         "phantomjs": true,
     ],
     "extends": [
-        "./node_modules/hw-jssg/ruleset/.eslint-core",
-        "./node_modules/hw-jssg/ruleset/.eslint-angular"
+        "./node_modules/hw-jssg/ruleset/.eslintrc-core",
+        "./node_modules/hw-jssg/ruleset/.eslintrc-angular"
     ]
 }
 ```
