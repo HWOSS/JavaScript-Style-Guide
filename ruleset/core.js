@@ -1,4 +1,5 @@
-{
+
+module.exports = {
   "globals": {
     "console": true
   },
@@ -283,4 +284,4 @@
     "template-curly-spacing": "off", // require or disallow spacing around embedded expressions of template strings
     "yield-star-spacing": "off" // require or disallow spacing around the * in yield* expressions
   }
-}
+};

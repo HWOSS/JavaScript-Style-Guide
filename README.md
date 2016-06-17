@@ -15,7 +15,7 @@ JavaScript Style Guide and Linting
 
 *.eslintrc*
 
-```javascript
+```json
 {
     "env": [
         "browser": true,
@@ -25,8 +25,8 @@ JavaScript Style Guide and Linting
         "phantomjs": true,
     ],
     "extends": [
-        "./node_modules/hw-jssg/ruleset/.eslintrc-core",
-        "./node_modules/hw-jssg/ruleset/.eslintrc-angular"
+        "hw-jssg", // is the same as "hw-jssg/ruleset/core"
+        "hw-jssg/ruleset/angular"
     ]
 }
 ```
