@@ -1,0 +1,8 @@
+{
+  "name": "hw-jssg",
+  "description": "JavaScript style guide",
+  "version": "0.0.1",
+  "devDependencies": {
+    "eslint": "^2.12.0"
+  }
+}
