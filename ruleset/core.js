@@ -208,7 +208,7 @@ module.exports = {
       "max": 4
     }], // enforce a maximum depth that blocks can be nested
     "max-len": ["warn", {
-      "code": 80
+      "code": 120
     }], // enforce a maximum line length
     "max-nested-callbacks": ["warn", {
       "max": 4
