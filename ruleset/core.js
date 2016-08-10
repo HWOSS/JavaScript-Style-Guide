@@ -200,7 +200,8 @@ module.exports = {
         "case": { "after": true },
         "else": { "after": true },
         "return": { "after": true },
-        "from": { "after": true }
+        "from": { "after": true },
+        "throw": { "after": true }
       }
     }], // enforce consistent spacing before and after keywords
     "lines-around-comment": "off", // require empty lines around comments
