@@ -143,8 +143,8 @@ module.exports = {
     "no-sync": "off", // disallow synchronous methods
     "callback-return": "off", // require return statements after callbacks
 
-    // fails with common webpack-CommonJS usages, moved to warning
-    "global-require": "warn", // require require() calls to be placed at top-level module scope
+    // fails with common webpack-CommonJS usages - removed
+    // "global-require": "warn", // require require() calls to be placed at top-level module scope
     "handle-callback-err": "off", // require error handling in callbacks
 
     // Stylistic Issues
@@ -254,7 +254,9 @@ module.exports = {
     }], // enforce consistent spacing before and after semicolons
     "sort-vars": "off", // require variables within the same declaration block to be sorted
     "space-before-blocks": "error", // enforce consistent spacing before blocks
-    "space-before-function-paren": ["error", "never"], // enforce consistent spacing before function definition opening parenthesis
+
+    // "space-before-function-paren": ["error", "never"], // enforce consistent spacing before function definition opening parenthesis
+
     "space-in-parens": ["error", "never"], // enforce consistent spacing inside parentheses
     "space-infix-ops": "error", // require spacing around operators
     "space-unary-ops": "off", // enforce consistent spacing before or after unary operators
