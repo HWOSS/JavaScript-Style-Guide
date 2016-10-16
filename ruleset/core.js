@@ -18,7 +18,9 @@ module.exports = {
     "no-empty": "error", // disallow empty block statements
     "no-empty-character-class": "error", // disallow empty character classes in regular expressions
     "no-ex-assign": "error", // disallow reassigning exceptions in catch clauses
-    "no-extra-boolean-cast": "error", // disallow unnecessary boolean casts
+
+    // this kills the !! operator which is arguably a JS perk
+    "no-extra-boolean-cast": "warn", // disallow unnecessary boolean casts
     "no-extra-parens": "off", // disallow unnecessary parentheses
     "no-extra-semi": "error", // disallow unnecessary semicolons
     "no-func-assign": "error", // disallow reassigning function declarations
@@ -127,7 +129,7 @@ module.exports = {
     "no-undef": "error", // disallow the use of undeclared variables unless mentioned in /* global */ comments
     "no-undef-init": "error", // disallow initializing variables to undefined
     "no-undefined": "error", // disallow the use of undefined as an identifier
-    "no-unused-vars": "error", // disallow unused variables
+    "no-unused-vars": "warn", // disallow unused variables
     "no-use-before-define": "warn", // disallow the use of variables before they are defined
 
     // Node.js and CommonJS
@@ -140,7 +142,9 @@ module.exports = {
     "no-restricted-modules": "off", // disallow specified modules when loaded by require
     "no-sync": "off", // disallow synchronous methods
     "callback-return": "off", // require return statements after callbacks
-    "global-require": "error", // require require() calls to be placed at top-level module scope
+
+    // fails with common webpack-CommonJS usages, moved to warning
+    "global-require": "warn", // require require() calls to be placed at top-level module scope
     "handle-callback-err": "off", // require error handling in callbacks
 
     // Stylistic Issues
@@ -152,7 +156,7 @@ module.exports = {
     "no-lonely-if": "warn", // disallow if statements as the only statement in else blocks
     "no-mixed-spaces-and-tabs": "error", // disallow mixed spaces and tabs for indentation
     "linebreak-style": "off", // enforce consistent linebreak style
-    "no-multiple-empty-lines": ["error", {
+    "no-multiple-empty-lines": ["warn", {
       "max": 2
     }], // disallow multiple empty lines
     "no-negated-condition": "warn", // disallow negated conditions
