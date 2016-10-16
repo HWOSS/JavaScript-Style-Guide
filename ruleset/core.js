@@ -61,7 +61,7 @@ module.exports = {
     "no-labels": "off", // disallow labeled statements
     "no-lone-blocks": "off", // disallow unnecessary nested blocks
     "no-loop-func": "error", // disallow function declarations and expressions inside loop statements
-    "no-multi-spaces": ["error", {
+    "no-multi-spaces": ["warn", {
       "exceptions": {
         "VariableDeclarator": true,
         "ImportDeclaration": true
@@ -226,13 +226,13 @@ module.exports = {
     "newline-after-var": ["error", "always"], // require or disallow an empty line after var declarations
     "newline-before-return": "error", // require an empty line before return statements
     "newline-per-chained-call": "error", // require a newline after each call in a method chain
-    "object-curly-spacing": ["error", "never"], // enforce consistent spacing inside braces
+    "object-curly-spacing": ["warn", "never"], // enforce consistent spacing inside braces
     "one-var": "off", // enforce variables to be declared either together or separately in functions
     "one-var-declaration-per-line": ["error", "always"], // require or disallow newlines around var declarations
     "operator-assignment": "off", // require or disallow assignment operator shorthand where possible
     "operator-linebreak": "off", // enforce consistent linebreak style for operators
     "padded-blocks": "off", // require or disallow padding within blocks
-    "quote-props": ["error", "always"], // require quotes around object literal property names
+    "quote-props": ["warn", "always"], // require quotes around object literal property names
     "quotes": ["error", "single", {
       "avoidEscape": true,
       "allowTemplateLiterals": true
