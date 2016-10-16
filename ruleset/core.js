@@ -198,16 +198,20 @@ module.exports = {
       "beforeColon": false,
       "afterColon": true
     }], // enforce consistent spacing between keys and values in object literal properties
-    "keyword-spacing": ["error", {
-      "before": true, "after": false,
-      "overrides": {
-        "case": { "after": true },
-        "else": { "after": true },
-        "return": { "after": true },
-        "from": { "after": true },
-        "throw": { "after": true }
-      }
-    }], // enforce consistent spacing before and after keywords
+
+    // keywords are not functions.  I'll indian leg-wrestle anyone who says otherwise.        
+    // "keyword-spacing": ["error", {
+    //   "before": true, "after": false,
+    //   "overrides": {
+    //     "case": { "after": true },
+    //     "else": { "after": true },
+    //     "return": { "after": true },
+    //     "from": { "after": true },
+    //     "throw": { "after": true },
+    //     "if": { "after": true },        
+    //   }
+    // }], // enforce consistent spacing before and after keywords
+
     "lines-around-comment": "off", // require empty lines around comments
     "max-depth": ["warn", {
       "max": 4
