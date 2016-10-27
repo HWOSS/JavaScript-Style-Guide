@@ -7,7 +7,7 @@ JavaScript Style Guide and Linting
 
 1. `npm i -D HWOSS/JavaScript-Style-Guide`
 
-1. Create a `.eslintrc` file in base directory
+1. Create an `.eslintrc` file in base directory
 
 1. Specify project environments. (http://eslint.org/docs/user-guide/configuring#specifying-environments)
 
@@ -15,15 +15,15 @@ JavaScript Style Guide and Linting
 
 *.eslintrc*
 
-```json
+```js
 {
-    "env": [
+    "env": {
         "browser": true,
         "commonjs": true,
         "jasmine": true,
         "jest": true,
         "phantomjs": true,
-    ],
+    },
     "extends": [
         "hw-jssg", // is the same as "hw-jssg/ruleset/core"
         "hw-jssg/ruleset/angular"

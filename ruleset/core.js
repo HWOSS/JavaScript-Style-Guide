@@ -18,7 +18,9 @@ module.exports = {
     "no-empty": "error", // disallow empty block statements
     "no-empty-character-class": "error", // disallow empty character classes in regular expressions
     "no-ex-assign": "error", // disallow reassigning exceptions in catch clauses
-    "no-extra-boolean-cast": "error", // disallow unnecessary boolean casts
+
+    // this kills the !! operator which is arguably a JS perk
+    "no-extra-boolean-cast": "warn", // disallow unnecessary boolean casts
     "no-extra-parens": "off", // disallow unnecessary parentheses
     "no-extra-semi": "error", // disallow unnecessary semicolons
     "no-func-assign": "error", // disallow reassigning function declarations
@@ -61,7 +63,7 @@ module.exports = {
     "no-labels": "off", // disallow labeled statements
     "no-lone-blocks": "off", // disallow unnecessary nested blocks
     "no-loop-func": "error", // disallow function declarations and expressions inside loop statements
-    "no-multi-spaces": ["error", {
+    "no-multi-spaces": ["warn", {
       "exceptions": {
         "VariableDeclarator": true,
         "ImportDeclaration": true
@@ -127,7 +129,7 @@ module.exports = {
     "no-undef": "error", // disallow the use of undeclared variables unless mentioned in /* global */ comments
     "no-undef-init": "error", // disallow initializing variables to undefined
     "no-undefined": "error", // disallow the use of undefined as an identifier
-    "no-unused-vars": "error", // disallow unused variables
+    "no-unused-vars": "warn", // disallow unused variables
     "no-use-before-define": "warn", // disallow the use of variables before they are defined
 
     // Node.js and CommonJS
@@ -140,7 +142,9 @@ module.exports = {
     "no-restricted-modules": "off", // disallow specified modules when loaded by require
     "no-sync": "off", // disallow synchronous methods
     "callback-return": "off", // require return statements after callbacks
-    "global-require": "error", // require require() calls to be placed at top-level module scope
+
+    // fails with common webpack-CommonJS usages - removed
+    // "global-require": "warn", // require require() calls to be placed at top-level module scope
     "handle-callback-err": "off", // require error handling in callbacks
 
     // Stylistic Issues
@@ -152,7 +156,7 @@ module.exports = {
     "no-lonely-if": "warn", // disallow if statements as the only statement in else blocks
     "no-mixed-spaces-and-tabs": "error", // disallow mixed spaces and tabs for indentation
     "linebreak-style": "off", // enforce consistent linebreak style
-    "no-multiple-empty-lines": ["error", {
+    "no-multiple-empty-lines": ["warn", {
       "max": 2
     }], // disallow multiple empty lines
     "no-negated-condition": "warn", // disallow negated conditions
@@ -194,16 +198,20 @@ module.exports = {
       "beforeColon": false,
       "afterColon": true
     }], // enforce consistent spacing between keys and values in object literal properties
-    "keyword-spacing": ["error", {
-      "before": true, "after": false,
-      "overrides": {
-        "case": { "after": true },
-        "else": { "after": true },
-        "return": { "after": true },
-        "from": { "after": true },
-        "throw": { "after": true }
-      }
-    }], // enforce consistent spacing before and after keywords
+
+    // keywords are not functions.  I'll indian leg-wrestle anyone who says otherwise.        
+    // "keyword-spacing": ["error", {
+    //   "before": true, "after": false,
+    //   "overrides": {
+    //     "case": { "after": true },
+    //     "else": { "after": true },
+    //     "return": { "after": true },
+    //     "from": { "after": true },
+    //     "throw": { "after": true },
+    //     "if": { "after": true },        
+    //   }
+    // }], // enforce consistent spacing before and after keywords
+
     "lines-around-comment": "off", // require empty lines around comments
     "max-depth": ["warn", {
       "max": 4
@@ -226,7 +234,7 @@ module.exports = {
     "newline-after-var": ["warn", "always"], // require or disallow an empty line after var declarations
     "newline-before-return": "warn", // require an empty line before return statements
     "newline-per-chained-call": "warn", // require a newline after each call in a method chain
-    "object-curly-spacing": ["error", "never"], // enforce consistent spacing inside braces
+  "object-curly-spacing": ["warn", "never"], // enforce consistent spacing inside braces
     "one-var": "off", // enforce variables to be declared either together or separately in functions
     "one-var-declaration-per-line": ["error", "always"], // require or disallow newlines around var declarations
     "operator-assignment": "off", // require or disallow assignment operator shorthand where possible
@@ -246,7 +254,9 @@ module.exports = {
     }], // enforce consistent spacing before and after semicolons
     "sort-vars": "off", // require variables within the same declaration block to be sorted
     "space-before-blocks": "error", // enforce consistent spacing before blocks
-    "space-before-function-paren": ["error", "never"], // enforce consistent spacing before function definition opening parenthesis
+
+    // "space-before-function-paren": ["error", "never"], // enforce consistent spacing before function definition opening parenthesis
+
     "space-in-parens": ["error", "never"], // enforce consistent spacing inside parentheses
     "space-infix-ops": "error", // require spacing around operators
     "space-unary-ops": "off", // enforce consistent spacing before or after unary operators
