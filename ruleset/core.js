@@ -160,7 +160,7 @@ module.exports = {
       "max": 2
     }], // disallow multiple empty lines
     "no-negated-condition": "warn", // disallow negated conditions
-    "no-nested-ternary": "error", // disallow nested ternary expressions
+    "no-nested-ternary": "warn", // disallow nested ternary expressions
     "no-new-object": "error", // disallow Object constructors
     "no-plusplus": "off", // disallow the unary operators ++ and --
     "no-restricted-syntax": "off", //disallow specified syntax // TODO: https://github.com/eslint/espree/blob/master/lib/ast-node-types.js
@@ -257,7 +257,7 @@ module.exports = {
 
     // "space-before-function-paren": ["error", "never"], // enforce consistent spacing before function definition opening parenthesis
 
-    "space-in-parens": ["error", "never"], // enforce consistent spacing inside parentheses
+    "space-in-parens": "off", // enforce consistent spacing inside parentheses
     "space-infix-ops": "error", // require spacing around operators
     "space-unary-ops": "off", // enforce consistent spacing before or after unary operators
     "spaced-comment": ["error", "always", {
