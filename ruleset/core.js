@@ -178,7 +178,7 @@ module.exports = {
     "comma-style": ["error", "last"], // enforce consistent comma style
     "computed-property-spacing": ["error", "never"], // enforce consistent spacing inside computed property brackets
     "consistent-this": "off", // enforce consistent naming when capturing the current execution context
-    "eol-last": "error", // enforce at least one newline at the end of files
+    "eol-last": "warn", // enforce at least one newline at the end of files
     "func-names": "off", // enforce named function expressions
     "func-style": "off", // enforce the consistent use of either function declarations or expressions
     "id-length": "off", // enforce minimum and maximum identifier lengths
@@ -215,7 +215,7 @@ module.exports = {
       "max": 4
     }], // enforce a maximum depth that callbacks can be nested
     "max-params": ["warn", {
-      "max": 4
+      "max": 6
     }], // enforce a maximum number of parameters in function definitions
     "max-statements": "off", // enforce a maximum number of statements allowed in function blocks
     "max-statements-per-line": ["error", {
@@ -223,16 +223,16 @@ module.exports = {
     }], // enforce a maximum number of statements allowed per line
     "new-cap": "error", // require constructor function names to begin with a capital letter
     "new-parens": "error", // require parentheses when invoking a constructor with no arguments
-    "newline-after-var": ["error", "always"], // require or disallow an empty line after var declarations
-    "newline-before-return": "error", // require an empty line before return statements
-    "newline-per-chained-call": "error", // require a newline after each call in a method chain
+    "newline-after-var": ["warn", "always"], // require or disallow an empty line after var declarations
+    "newline-before-return": "warn", // require an empty line before return statements
+    "newline-per-chained-call": "warn", // require a newline after each call in a method chain
     "object-curly-spacing": ["error", "never"], // enforce consistent spacing inside braces
     "one-var": "off", // enforce variables to be declared either together or separately in functions
     "one-var-declaration-per-line": ["error", "always"], // require or disallow newlines around var declarations
     "operator-assignment": "off", // require or disallow assignment operator shorthand where possible
     "operator-linebreak": "off", // enforce consistent linebreak style for operators
     "padded-blocks": "off", // require or disallow padding within blocks
-    "quote-props": ["error", "always"], // require quotes around object literal property names
+    "quote-props": "off", // require quotes around object literal property names
     "quotes": ["error", "single", {
       "avoidEscape": true,
       "allowTemplateLiterals": true
