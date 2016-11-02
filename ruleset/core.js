@@ -55,7 +55,7 @@ module.exports = {
     "no-extra-label": "warn", // disallow unnecessary labels
     "no-fallthrough": "error", // disallow fallthrough of case statements
     "no-floating-decimal": "error", // disallow leading or trailing decimal points in numeric literals
-    "no-implicit-coercion": "warn", // disallow shorthand type conversions
+    "no-implicit-coercion": "off", // disallow shorthand type conversions
     "no-implicit-globals": "error", // disallow var and named function declarations in the global scope
     "no-implied-eval": "error", // disallow the use of eval()-like methods
     "no-invalid-this": "error", // disallow this keywords outside of classes or class-like objects
