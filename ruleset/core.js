@@ -194,9 +194,9 @@ module.exports = {
       }, "SwitchCase": 1
     }], // enforce consistent indentation
     "jsx-quotes": "off", // enforce the consistent use of either double or single quotes in JSX attributes
-    "key-spacing": ["error", {
+    "key-spacing": ["warn", {
       "beforeColon": false,
-      "afterColon": true
+      "afterColon": false
     }], // enforce consistent spacing between keys and values in object literal properties
 
     // keywords are not functions.  I'll indian leg-wrestle anyone who says otherwise.        
@@ -217,7 +217,7 @@ module.exports = {
       "max": 4
     }], // enforce a maximum depth that blocks can be nested
     "max-len": ["warn", {
-      "code": 120
+      "code": 150
     }], // enforce a maximum line length
     "max-nested-callbacks": ["warn", {
       "max": 4
