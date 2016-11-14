@@ -128,7 +128,7 @@ module.exports = {
     "no-shadow-restricted-names": "off", // disallow identifiers from shadowing restricted names
     "no-undef": "error", // disallow the use of undeclared variables unless mentioned in /* global */ comments
     "no-undef-init": "off", // disallow initializing variables to undefined
-    "no-undefined": "error", // disallow the use of undefined as an identifier
+    "no-undefined": "off", // disallow the use of undefined as an identifier
     "no-unused-vars": "warn", // disallow unused variables
     "no-use-before-define": "warn", // disallow the use of variables before they are defined
 
