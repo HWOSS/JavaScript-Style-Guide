@@ -102,7 +102,7 @@ module.exports = {
     "block-scoped-var": "warn", // enforce the use of variables within the scope they are defined
     "complexity": ["off", 11], // enforce a maximum cyclomatic complexity allowed in a program
     "consistent-return": "warn", // require return statements to either always or never specify values
-    "curly": "error", // enforce consistent brace style for all control statements
+    "curly": "off", // enforce consistent brace style for all control statements
     "default-case": "warn", // require default cases in switch statements
     "dot-location": ["error", "property"], // enforce consistent newlines before and after dots
     "dot-notation": "warn", // enforce dot notation whenever possible
