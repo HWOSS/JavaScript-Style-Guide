@@ -195,8 +195,9 @@ module.exports = {
     }], // enforce consistent indentation
     "jsx-quotes": "off", // enforce the consistent use of either double or single quotes in JSX attributes
     "key-spacing": ["warn", {
+      "mode": "minimum",
       "beforeColon": false,
-      "afterColon": false
+      "afterColon": true
     }], // enforce consistent spacing between keys and values in object literal properties
 
     // keywords are not functions.  I'll indian leg-wrestle anyone who says otherwise.        
